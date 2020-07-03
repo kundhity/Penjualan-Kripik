@@ -68,14 +68,7 @@ constraint FK_Barang FOREIGN KEY (Id_Barang)
 REFERENCES Barang(Id_Barang)
 );
 
-- Tambah foreign key ke tabel pemesanan :
-alter table Pemesanan_07053
-add constraint FK_Id_pelanggan FOREIGN KEY (Id_pelanggan)
-references Pelanggan_07053(Id_pelanggan)
-add constraint FK_Id_pegawai FOREIGN KEY (Id_pegawai)
-references Pegawai_07053(Id_pegawai)
-add constraint FK_Id_kurir FOREIGN KEY (Id_kurir)
-references Kurir_07053(Id_kurir);
+
 
 - Buat sequence id_transaksi :
 CREATE SEQUENCE id_transaksi
